@@ -9,12 +9,12 @@ module.exports = (env, args) => {
         entry: "./src/app.js",
         // entry: "./src/playground/redux-expensify.js",
         output: {
-            path: path.join(__dirname, "public"),
+            path: path.join(__dirname, 'public', 'dist'),
             filename: "bundle.js"
         },
         module: {
             rules: [{
-                loader: "babel-loader",
+                loader: 'babel-loader',
                 test: /\.js$/,
                 exclude: /node_modules/
             }, { 
@@ -42,8 +42,9 @@ module.exports = (env, args) => {
         mode: 'development',
         devtool: isProduction ? 'source-map' : 'inline-source-map',
         devServer: {
-            contentBase: path.join(__dirname, "public"),
-            historyApiFallback: true 
+            contentBase: path.join(__dirname, 'public'),
+            historyApiFallback: true,
+            publicPath: '/dist/'
         }
     }
 };
