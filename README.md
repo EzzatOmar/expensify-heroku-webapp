@@ -2,6 +2,7 @@
 
 # Install
   `yarn install`
+  `yarn install --dev`
 
 # Run Webpack
   `yarn run dev-server`
@@ -9,5 +10,5 @@
 # Babel
   `babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch`
 
-# live-server
-  `live-server --port=8082 --no-browser public/`
+# test
+  `yarn test -- --watch`
