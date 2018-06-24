@@ -1,15 +1,10 @@
 .header {
   background-color: $dark-blue;
-  height: 10vh;
-  padding-top: 2vh;
 }
 
 .header__title {
   color: white;
   text-decoration: none;
-  h1 {
-    margin: 0;
-  }
 }
 
 .header__content {
